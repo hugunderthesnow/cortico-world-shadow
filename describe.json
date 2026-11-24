@@ -1,0 +1,15 @@
+{
+  "tools": [
+    {
+      "name": "pet_shadow",
+      "description": "Poke the small shadow that follows you. It plays one random expression or motion and the receipt names it. The person poking the shadow themselves never reaches you and costs no turn.",
+      "parameters": { "type": "object", "properties": {}, "required": [] },
+      "tags": ["act"],
+      "summary": {
+        "zh": "戳一下跟着你的影子，它会随机做一个表情或动作，回执写明它做了什么。",
+        "en": "Pokes the shadow that follows you; it plays one random expression or motion and the receipt names it."
+      }
+    }
+  ],
+  "events": []
+}

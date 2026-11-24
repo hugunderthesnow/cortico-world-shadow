@@ -1,0 +1,59 @@
+{
+  "name": "cortico-world-shadow",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "A shadow clone for the Coo desktop pet: a second, smaller body that follows it, takes pokes only, and answers one pet_shadow tool call.",
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "coopanion",
+    "desktop-pet",
+    "pet",
+    "shadow"
+  ],
+  "license": "MIT",
+  "author": "hugunderthesnow",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugunderthesnow/cortico-world-shadow.git"
+  },
+  "homepage": "https://github.com/hugunderthesnow/cortico-world-shadow#readme",
+  "bugs": {
+    "url": "https://github.com/hugunderthesnow/cortico-world-shadow/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "win32"
+  ],
+  "main": "./src/index.mjs",
+  "exports": "./src/index.mjs",
+  "files": [
+    "src",
+    "ENV_PROMPT.md",
+    "describe.json",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "Shadow",
+    "describe": "describe.json",
+    "tags": [
+      "creative",
+      "experimental"
+    ],
+    "locales": {
+      "zh": {
+        "displayName": "影子分身",
+        "description": "给 Coo 桌宠加一只跟着走的小影子：固定形象包、0.45 倍、只吃鼠标戳；Coo 可以用 pet_shadow 主动戳它一次并收到动作回执。大小、距离、速度、音量与形象包在设置页调。桌宠窗口里的第二只身体需要仓库里的配套安装脚本。"
+      },
+      "en": {
+        "displayName": "Shadow",
+        "description": "A small shadow for the Coo desktop pet: fixed figure pack, 0.45x, poke-only. Coo can poke it once with pet_shadow and gets a receipt naming the motion. Size, gap, speed, volume and figure pack are set in its settings page. The second body inside the pet window needs the companion installer from the repository."
+      }
+    }
+  }
+}
